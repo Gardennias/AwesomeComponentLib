@@ -11,15 +11,12 @@
 				
 			}
 		},
-		onLoad() {
-		
-		},
 		methods: {
 			
 		}
 	}
 </script>
 
-<style scoped>
-	
+<style>
+
 </style>

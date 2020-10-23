@@ -11,10 +11,14 @@ const user= {
 	list: (options) => httpRequest.get(baseUrl+'user/list', options)
 }
 
+const bantch = {
+	list: (options) => httpRequest.get(baseUrl+'/bantchList', options)
+}
 
-const baidu = (options) => httpRequest.get(baseUrl+'material/ocr/baidu', options)
+const pagenation = (options) => httpRequest.get(baseUrl+'/allList', options)
 
-const getAccess_Token = (options) => httpRequest.get(baseUrl+'material/ocr/baidu', options)
+// const baidu = (options) => httpRequest.get(baseUrl+'material/ocr/baidu', options)
+// const getAccess_Token = (options) => httpRequest.get(baseUrl+'material/ocr/baidu', options)
 
 let ocrUrl = ''
 
@@ -49,4 +53,6 @@ const userMaintenance = {
 
 export default {
 	user,
+	bantch,
+	pagenation
 }
